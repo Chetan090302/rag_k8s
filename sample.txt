@@ -1,0 +1,31 @@
+Retrieval-Augmented Generation (RAG)
+
+RAG is a technique that combines information retrieval with Large Language Models.
+
+Components of RAG:
+1. Document Loader
+2. Text Splitter
+3. Embedding Model
+4. Vector Database
+5. Retriever
+6. Large Language Model
+
+Popular Vector Databases:
+- FAISS
+- Chroma
+- Pinecone
+- Weaviate
+
+Embeddings convert text into dense vector representations.
+
+FAISS is an efficient similarity search library developed by Meta.
+
+Hybrid Search combines:
+1. Semantic Search
+2. Keyword Search (BM25)
+
+Reciprocal Rank Fusion (RRF) is commonly used to combine rankings from multiple retrievers.
+
+Cross Encoders are used for reranking retrieved documents before sending them to the LLM.
+
+LangChain and LangGraph are widely used frameworks for building production-grade RAG systems.

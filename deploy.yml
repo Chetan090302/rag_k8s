@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: fastapi-app
+  namespace: dev
+
+spec:
+  replicas: 0
+
+  selector:
+    matchLabels:
+      app: fastapi-app
+
+  template:
+    metadata:
+      labels:
+        app: fastapi-app
+
+    spec:
+      containers:
+      - name: fastapi-app
+        image: chetanjetty/fastapi-app:v3
+        imagePullPolicy: Always
+
+        env:
+        - name: MODEL_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: fastapi-config
+              key: MODEL_NAME
+
+        - name: LOG_LEVEL
+          valueFrom:
+            configMapKeyRef:
+              name: fastapi-config
+              key: LOG_LEVEL
+  

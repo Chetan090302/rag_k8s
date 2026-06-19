@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+faiss-cpu
+langchain
+langchain-community
+pydantic
+langchain-google-genai
+langgraph

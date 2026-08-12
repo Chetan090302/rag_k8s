@@ -3,8 +3,6 @@ from rag_pipeline import trigger_graph
 from pydantic import BaseModel
 from typing import Optional
 
-#hello world
-
 class Input(BaseModel):
     question:str
     answer:str=""

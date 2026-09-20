@@ -16,8 +16,8 @@ app=FastAPI()
 
 @app.get("/root")
 def get_root():
-    return {"response":"Hello"}
-
+    return {"response":"Hello nithish"}
+ 
 @app.get("/")
 def get_root():
     return {"response":"Hello world"}

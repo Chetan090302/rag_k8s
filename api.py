@@ -14,6 +14,10 @@ class Output(BaseModel):
 
 app=FastAPI()
 
+@app.get("/root")
+def get_root():
+    return {"response":"Hello"}
+
 @app.get("/")
 def get_root():
     return {"response":"Hello world"}

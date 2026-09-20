@@ -6,7 +6,7 @@ metadata:
   namespace: dev
 
 spec:
-  replicas: 0
+  replicas: 3
 
   selector:
     matchLabels:
@@ -20,8 +20,8 @@ spec:
     spec:
       containers:
       - name: fastapi-app
-        image: chetanjetty/fastapi-app:v3
-        imagePullPolicy: Always
+        image: backend:1.4
+        imagePullPolicy: Never
 
         env:
         - name: MODEL_NAME

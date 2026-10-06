@@ -4,3 +4,4 @@ DATASET
 __pycache__
 captured_images
 secret.yml
+secrets1.yml

@@ -2,7 +2,7 @@ from fastapi import FastAPI,HTTPException
 from rag_pipeline import trigger_graph
 from pydantic import BaseModel
 from typing import Optional
-#world
+#hello
 class Input(BaseModel):
     question:str
     answer:str=""

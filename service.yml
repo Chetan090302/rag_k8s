@@ -15,4 +15,4 @@ spec:
       targetPort: 8000
 
   type: NodePort
-  
+  #chintu

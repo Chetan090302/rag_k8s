@@ -2,6 +2,10 @@ from fastapi import FastAPI,HTTPException
 from rag_pipeline import trigger_graph
 from pydantic import BaseModel
 from typing import Optional
+<<<<<<< HEAD
+=======
+#hello chintu
+>>>>>>> 383924302addae12f98bc4e00983d7083df445fe
 
 class Input(BaseModel):
     question:str
